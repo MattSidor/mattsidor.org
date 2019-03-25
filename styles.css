@@ -46,18 +46,20 @@ aside {
   margin-top: 1em;
 }
 .link {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 0.25em 1em;
 }
 .link > a {
   font-family: "Open Sans", sans-serif;
 }
+.link-text {
+  width: 210px;
+}
 .logo {
-  width: 3.75em;
+  width: 70px;
   text-align: center;
 }
 .github-logo {
-  margin-right: 0.3em;
+  margin-right: 4px;
 }
 
 @media (max-width: 640px) {
@@ -66,7 +68,7 @@ aside {
     text-align: center;
   }
 
-  img {
+  .avatar {
     order: 0;
     margin: 0;
   }
