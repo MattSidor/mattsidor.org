@@ -1,0 +1,81 @@
+body {
+  max-width: 90vw;
+  margin: 0 auto 2em auto;
+  background-color: #eee;
+  font-family: "Lora", serif;
+  font-size: 1.25em;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0.2em;
+}
+
+section {
+  max-width: 40em;
+  margin: 1.5em auto;
+}
+
+aside {
+  font-style: italic;
+}
+
+.avatar {
+  margin-left: 1em;
+}
+
+.link,
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.links {
+  margin-top: 1em;
+}
+.link {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.link > a {
+  font-family: "Open Sans", sans-serif;
+}
+.logo {
+  width: 3.75em;
+  text-align: center;
+}
+.github-logo {
+  margin-right: 0.3em;
+}
+
+@media (max-width: 640px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    order: 0;
+    margin: 0;
+  }
+
+  .header-text {
+    order: 1;
+  }
+
+  h2 {
+    margin-bottom: 0.25em;
+  }
+}
