@@ -61,9 +61,6 @@ aside {
   width: 70px;
   text-align: center;
 }
-.github-logo {
-  margin-right: 4px;
-}
 
 @media (max-width: 640px) {
   header {
