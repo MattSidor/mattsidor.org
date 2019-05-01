@@ -86,6 +86,7 @@
       <a href="https://www.github.com/MattSidor" class="link-text">github.com/MattSidor</a>
     </div>
   </div>
+  <div id="load-time" class="load-time"></div>
 </body>
 <script>
   // Google Analytics
@@ -107,5 +108,11 @@
   a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},
   trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
   (window,"UA-46363133-1",{anonymizeIp:true,colorDepth:true,characterSet:true,screenSize:true,language:true});
+</script>
+<script>
+  window.onload = function () {
+    var loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart; 
+    var loadTimeElement = document.getElementById('load-time').innerHTML = 'This page loaded in ' + loadTime + 'ms.';
+  }
 </script>
 </html>

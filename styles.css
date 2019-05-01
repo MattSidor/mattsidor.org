@@ -58,6 +58,12 @@ section {
   text-align: center;
 }
 
+.load-time {
+  font-size: 0.5em;
+  text-align: center;
+  margin: 2em auto;
+}
+
 @media (max-width: 640px) {
   header {
     flex-direction: column;
