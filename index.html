@@ -501,5 +501,27 @@
         </p>
       </section>
     </div>
+    <footer>
+      <p>
+        This site is a work in progress! I'm working on a portfolio, blog, and
+        more! <br />You can follow along on
+        <a
+          href="https://github.com/MattSidor/mattsidor.org/issues"
+          target="_blank"
+          >my Github issue tracker</a
+        >.
+      </p>
+      <p>This page loaded in <span id="loadtime"></span> seconds.</p>
+    </footer>
   </body>
+  <script>
+    var loadtimeSpan = document.getElementById("loadtime");
+    window.onload = function() {
+      var loadTime =
+        (window.performance.timing.domContentLoadedEventEnd -
+          window.performance.timing.navigationStart) /
+        1000;
+      loadtimeSpan.innerHTML = loadTime;
+    };
+  </script>
 </html>
