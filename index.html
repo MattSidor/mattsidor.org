@@ -6,15 +6,28 @@
 
     <title>Matt Sidor - Fullstack Web Developer</title>
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500;600&display=swap"
-      rel="stylesheet"
-    />
-
     <style>
+      /* albert-sans-500 - latin */
+      @font-face {
+        font-family: 'Albert Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-display: fallback;
+        src:
+            url('fonts/albert-sans-v1-latin-500.woff2') format('woff2'),
+            url('fonts/albert-sans-v1-latin-500.woff') format('woff');
+      }
+      /* albert-sans-600 - latin */
+      @font-face {
+        font-family: 'Albert Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-display: fallback;
+        src:
+            url('fonts/albert-sans-v1-latin-600.woff2') format('woff2'),
+            url('fonts/albert-sans-v1-latin-600.woff') format('woff');
+      }
+
       body {
         background: linear-gradient(
           to left top,
