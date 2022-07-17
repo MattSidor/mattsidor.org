@@ -3,7 +3,8 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    
+
+[[headers]]
   for = "/index.html"
   [headers.values]
     cache-control = '''
@@ -12,6 +13,7 @@
       no-store,
       must-revalidate'''
 
+[[headers]]
   for = "/fonts/*"
   [headers.values]
     cache-control = '''
